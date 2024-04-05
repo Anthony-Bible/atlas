@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/migratelint"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlclient"
-	_ "ariga.io/atlas/sql/sqlite"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/migratelint"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
+	_ "github.com/anthony-bible/atlas/sql/sqlite"
 
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/stretchr/testify/require"

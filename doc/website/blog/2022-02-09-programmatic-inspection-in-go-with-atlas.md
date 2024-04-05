@@ -46,7 +46,7 @@ Most of the SQL that we use in day-to-day applications is pretty standard. Howev
 metadata, database engines vary greatly in the way they work. The way to retrieve information about things like
 available schemas and tables, column types and their default values and many other aspects of the database schema looks
 completely different in each database engine. For instance, consider this query
-([source](https://github.com/ariga/atlas/blob/2e0886e03c5862c54247f41f906f60d64f9c7eaf/sql/postgres/inspect.go#L728))
+([source](https://github.com/anthony-bible/atlas/blob/2e0886e03c5862c54247f41f906f60d64f9c7eaf/sql/postgres/inspect.go#L728))
 which can be used to get the metadata about table columns from a Postgres database:
 
 ```sql
@@ -80,7 +80,7 @@ ORDER BY t1.table_name, t1.ordinal_position
 As you can see, while it's definitely possible to get the needed metadata, information about the schema is stored in
 multiple tables in a way that isn't particularly well documented, and often requires delving into the actual source code
 to understand fully. Here's a query to get similar information from
-MySQL ([source](https://github.com/ariga/atlas/blob/2e0886e03c5862c54247f41f906f60d64f9c7eaf/sql/mysql/inspect.go#L631)):
+MySQL ([source](https://github.com/anthony-bible/atlas/blob/2e0886e03c5862c54247f41f906f60d64f9c7eaf/sql/mysql/inspect.go#L631)):
 
 ```sql
 SELECT `TABLE_NAME`,
@@ -128,7 +128,7 @@ are working with. To be able to provide developers with a data structure that ca
 across different versions of multiple database engines we've learned, is not an easy task. This is a perfect opportunity
 for an infrastructure project: a problem that is annoyingly complex to solve and that if solved well, becomes a
 foundation for many kinds of applications. This was one of our motivations for
-creating [Atlas](https://atlasgo.io) ([GitHub](https://github.com/ariga/atlas)) - an open-source project that we
+creating [Atlas](https://atlasgo.io) ([GitHub](https://github.com/anthony-bible/atlas)) - an open-source project that we
 maintain here at [Ariga](https://ariga.io).
 
 Using Atlas, database schemas can be inspected to product Go structs representing a graph of the database
@@ -228,13 +228,13 @@ schema topology. Notice the many cyclic references that make it hard to print (b
 #### Inspecting databases in Go using Atlas
 
 While Atlas is commonly used as a [CLI tool](https://atlasgo.io/cli/getting-started/setting-up), all of Atlas's
-core-engine capabilities are available as a [Go module](https://pkg.go.dev/ariga.io/atlas) that you can use
+core-engine capabilities are available as a [Go module](https://pkg.go.dev/github.com/anthony-bible/atlas) that you can use
 programmatically. Let's get started with database inspection in Go:
 
 To install Atlas, use:
 
 ```shell
-go get ariga.io/atlas@master
+go get github.com/anthony-bible/atlas@master
 ```
 
 #### Drivers
@@ -266,8 +266,8 @@ import (
 	"log"
 	"testing"
 	_ "github.com/mattn/go-sqlite3"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlite"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlite"
 )
 
 func Test(t *testing.T) {
@@ -288,7 +288,7 @@ func Test(t *testing.T) {
 #### Inspection
 
 As we mentioned above, inspection is one of Atlas's core capabilities. Consider the `Inspector`
-interface in the [sql/schema](https://pkg.go.dev/ariga.io/atlas@master/sql/schema#Inspector)
+interface in the [sql/schema](https://pkg.go.dev/github.com/anthony-bible/atlas@master/sql/schema#Inspector)
 package:
 
 ```go
@@ -312,9 +312,9 @@ As you can see, the `Inspector` interface provides methods for inspecting on dif
 * `InspectSchema` - provides inspection capabilities for a single schema within a database server.
 * `InspectRealm` - inspects the entire connected database server.
 
-Each database driver (for example [MySQL](https://pkg.go.dev/ariga.io/atlas@master/sql/mysql#Driver),
-[Postgres](https://pkg.go.dev/ariga.io/atlas@master/sql/postgres#Driver) or
-[SQLite](https://pkg.go.dev/ariga.io/atlas@master/sql/sqlite#Driver)) implements this interface. Let's see how we can
+Each database driver (for example [MySQL](https://pkg.go.dev/github.com/anthony-bible/atlas@master/sql/mysql#Driver),
+[Postgres](https://pkg.go.dev/github.com/anthony-bible/atlas@master/sql/postgres#Driver) or
+[SQLite](https://pkg.go.dev/github.com/anthony-bible/atlas@master/sql/sqlite#Driver)) implements this interface. Let's see how we can
 use this interface by inspecting a "dummy" SQLite database. Continuing on the example from above:
 
 ```go
@@ -354,7 +354,7 @@ func TestInspect(t *testing.T) {
 ```
 
 The full source-code for this example is available in
-the [atlas-examples repo](https://github.com/ariga/atlas-examples/blob/fb7fef80ca0ad635f056c40a0a1ea223ccf0a9c0/inspect_test.go#L15)
+the [atlas-examples repo](https://github.com/anthony-bible/atlas-examples/blob/fb7fef80ca0ad635f056c40a0a1ea223ccf0a9c0/inspect_test.go#L15)
 .
 
 And voila! In this example, we first created a table named "example" by executing a query directly against the database.

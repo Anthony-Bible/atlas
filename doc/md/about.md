@@ -14,4 +14,4 @@ a tech company founded by the maintainers of [Ent](https://entgo.io).
 
 If you have a question or want to chat with the Atlas community, 
 join our [Discord Server](https://discord.com/invite/QhsmBAWzrC) or 
-[open an issue](https://github.com/ariga/atlas/issues) on our [GitHub Repo](https://github.com/ariga/atlas).
+[open an issue](https://github.com/anthony-bible/atlas/issues) on our [GitHub Repo](https://github.com/anthony-bible/atlas).

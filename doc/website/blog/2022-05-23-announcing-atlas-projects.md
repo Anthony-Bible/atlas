@@ -5,8 +5,8 @@ tags: [cli, announcement]
 image: https://blog.ariga.io/uploads/images/posts/v0.4.1/project-file.png
 ---
 
-A few days ago we released [v0.4.1](https://github.com/ariga/atlas/releases/tag/v0.4.1) of
-Atlas. Along with [a multitude](https://github.com/ariga/atlas/compare/v0.4.0...v0.4.1) of
+A few days ago we released [v0.4.1](https://github.com/anthony-bible/atlas/releases/tag/v0.4.1) of
+Atlas. Along with [a multitude](https://github.com/anthony-bible/atlas/compare/v0.4.0...v0.4.1) of
 improvements and fixes, I'm happy to announce the release of a feature that we've been planning
 for a while: [Project Files](https://atlasgo.io/atlas-schema/projects).
 
@@ -128,6 +128,6 @@ Input variables can be used for many other use cases by passing them as [input v
 In this post, I presented [Project Files](https://atlasgo.io/atlas-schema/projects), a new feature recently added to Atlas
 to help developers create more fluent workflows for managing changes to their database schemas. In the coming weeks
 we will be adding a few more improvements to the dev flow, such as support for marking a specific environment as
-the default one (alleviating the need to specify `--env` in many cases) and [multi-file schema definitions](https://github.com/ariga/atlas/issues/510).
+the default one (alleviating the need to specify `--env` in many cases) and [multi-file schema definitions](https://github.com/anthony-bible/atlas/issues/510).
 
 Have questions? Feedback? Find our team [on our Discord server](https://discord.gg/zZ6sWVg6NT).

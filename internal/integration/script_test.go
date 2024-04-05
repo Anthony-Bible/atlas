@@ -19,12 +19,12 @@ import (
 	"testing"
 	"unicode"
 
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/mysql"
-	"ariga.io/atlas/sql/postgres"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlclient"
-	"ariga.io/atlas/sql/sqlite"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/mysql"
+	"github.com/anthony-bible/atlas/sql/postgres"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/sql/sqlite"
 
 	"github.com/pkg/diff"
 	"github.com/rogpeppe/go-internal/testscript"

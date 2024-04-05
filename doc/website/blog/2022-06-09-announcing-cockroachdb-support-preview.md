@@ -5,7 +5,7 @@ tags: [cockroachdb, integration, announcement]
 image: https://blog.ariga.io/uploads/images/posts/cockroachdb/atlas_n_crdb.png
 ---
 
-Today, I'm happy to announce the release of [v0.4.2](https://github.com/ariga/atlas/releases/tag/v0.4.2) of the Atlas CLI.
+Today, I'm happy to announce the release of [v0.4.2](https://github.com/anthony-bible/atlas/releases/tag/v0.4.2) of the Atlas CLI.
 This version includes many improvements and fixes, but I wanted to share with you exciting news about something I
 personally worked on. As of v0.4.2, Atlas includes preview support for CockroachDB 🎉
 
@@ -25,7 +25,7 @@ database. From their README:
 > ACID transactions; and provides a familiar SQL API for structuring, manipulating, and querying data.
 
 CockroachDB has been gaining popularity and many of you [have](https://github.com/ent/ent/issues/2545)
-[been](https://github.com/ariga/atlas/issues/785#issue-1231951038) [asking](https://github.com/ariga/atlas/issues/785#issuecomment-1125853135)
+[been](https://github.com/anthony-bible/atlas/issues/785#issue-1231951038) [asking](https://github.com/anthony-bible/atlas/issues/785#issuecomment-1125853135)
 for Atlas to support it.
 
 While CockroachDB aims to be PostgreSQL compatible, it still has some incompatibilities
@@ -136,7 +136,7 @@ you may want to explore when getting started with Atlas:
 ### Preview support
 The integration of Atlas with CockroachDB is well tested with version `v21.2.11` (at the time of writing,
 `latest`) and will be extended in the future. If you're using other versions of CockroachDB or looking
-for help, don't hesitate to [file an issue](https://github.com/ariga/atlas/issues) or join our
+for help, don't hesitate to [file an issue](https://github.com/anthony-bible/atlas/issues) or join our
 [Discord channel](https://discord.gg/zZ6sWVg6NT).
 
 Have questions? Feedback? Find our team [on our Discord server](https://discord.gg/zZ6sWVg6NT).

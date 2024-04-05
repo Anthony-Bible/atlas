@@ -8,8 +8,8 @@ import (
 	"context"
 	"fmt"
 
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
 )
 
 // DevDriver is a driver that provides additional functionality

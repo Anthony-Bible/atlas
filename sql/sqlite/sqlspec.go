@@ -9,11 +9,11 @@ import (
 	"strconv"
 	"strings"
 
-	"ariga.io/atlas/schemahcl"
-	"ariga.io/atlas/sql/internal/specutil"
-	"ariga.io/atlas/sql/internal/sqlx"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlspec"
+	"github.com/anthony-bible/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/sql/internal/specutil"
+	"github.com/anthony-bible/atlas/sql/internal/sqlx"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlspec"
 
 	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/zclconf/go-cty/cty"

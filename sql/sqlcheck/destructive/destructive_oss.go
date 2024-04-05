@@ -9,9 +9,9 @@ package destructive
 import (
 	"errors"
 
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlcheck"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlcheck"
 )
 
 func (*Analyzer) hasEmptyTableCheck(*sqlcheck.Pass, *schema.Table) bool {

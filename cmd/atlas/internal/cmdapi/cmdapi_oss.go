@@ -12,13 +12,13 @@ import (
 	"fmt"
 	"text/template"
 
-	"ariga.io/atlas/cmd/atlas/internal/cloudapi"
-	cmdmigrate "ariga.io/atlas/cmd/atlas/internal/migrate"
-	"ariga.io/atlas/cmd/atlas/internal/migratelint"
-	"ariga.io/atlas/schemahcl"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/sqlcheck"
-	"ariga.io/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cloudapi"
+	cmdmigrate "github.com/anthony-bible/atlas/cmd/atlas/internal/migrate"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/migratelint"
+	"github.com/anthony-bible/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/sqlcheck"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
 
 	"github.com/spf13/cobra"
 )

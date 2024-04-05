@@ -8,13 +8,13 @@ import (
 	"context"
 	"testing"
 
-	"ariga.io/atlas/schemahcl"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/postgres"
-	"ariga.io/atlas/sql/postgres/postgrescheck"
-	_ "ariga.io/atlas/sql/postgres/postgrescheck"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlcheck"
+	"github.com/anthony-bible/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/postgres"
+	"github.com/anthony-bible/atlas/sql/postgres/postgrescheck"
+	_ "github.com/anthony-bible/atlas/sql/postgres/postgrescheck"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlcheck"
 
 	"github.com/stretchr/testify/require"
 )

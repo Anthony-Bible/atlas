@@ -15,12 +15,12 @@ import (
 	"path/filepath"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/migrate/ent"
-	"ariga.io/atlas/cmd/atlas/internal/migrate/ent/revision"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlclient"
-	"ariga.io/atlas/sql/sqltool"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/migrate/ent"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/migrate/ent/revision"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/sql/sqltool"
 
 	"entgo.io/ent/dialect"
 	"entgo.io/ent/dialect/sql"

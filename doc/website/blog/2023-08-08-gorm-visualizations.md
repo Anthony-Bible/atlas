@@ -70,7 +70,7 @@ For more installation options, see [these instructions](/getting-started#install
 Next, let's install the GORM Atlas provider which will allow us to load our GORM models into Atlas:
 
 ```shell
-go get ariga.io/atlas-provider-gorm@v0.1.0
+go get github.com/anthony-bible/atlas-provider-gorm@v0.1.0
 ```
 
 Next, to prevent the Go Modules system from dropping this dependency from our `go.mod` file, let's
@@ -81,7 +81,7 @@ for tracking dependencies of tools and add a file named `tools.go` with the foll
 //go:build tools
 package main
 
-import _ "ariga.io/atlas-provider-gorm/gormschema"
+import _ "github.com/anthony-bible/atlas-provider-gorm/gormschema"
 ```
 Alternatively, you can simply add a blank import to the `models.go` file we created
 above.
@@ -102,7 +102,7 @@ data "external_schema" "gorm" {
     "go",
     "run",
     "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./models",
     "--dialect", "sqlite",
@@ -116,7 +116,7 @@ env "gorm" {
 ```
 This file defines two things:
 * An [External Schema Loader](https://atlasgo.io/atlas-schema/projects#data-source-external_schema) named `gorm` that will load our GORM models
-  into Atlas by executing the `ariga.io/atlas-provider-gorm` program on our `models` package. 
+  into Atlas by executing the `github.com/anthony-bible/atlas-provider-gorm` program on our `models` package. 
 * An [Environment](/atlas-schema/projects#environments) named `gorm` that will use the `gorm` schema loader
   to load the models into a SQLite database in memory.
 

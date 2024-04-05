@@ -583,7 +583,7 @@ with a database, HCL or SQL schemas, or even with other ORM schemas.
 data "external_schema" "gorm" {
   program = [
     "go", "run", "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./path/to/models",
     "--dialect", "mysql",
@@ -622,7 +622,7 @@ atlas schema diff \
 data "external_schema" "gorm" {
   program = [
     "go", "run", "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./path/to/models",
     "--dialect", "postgres",
@@ -661,7 +661,7 @@ atlas schema diff \
 data "external_schema" "gorm" {
   program = [
     "go", "run", "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./path/to/models",
     "--dialect", "sqlite",
@@ -700,7 +700,7 @@ atlas schema diff \
 data "external_schema" "gorm" {
   program = [
     "go", "run", "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./path/to/models",
     "--dialect", "sqlserver",

@@ -277,5 +277,5 @@ we are planning to push the development ecosystem forward. A list of tools that 
 * Extended migration logics such as renaming columns, adding or dropping nullability and altering enums.
 * Toolsets for examining the migration history and reproducing it. 
 
-We hope that you find Atlas CLI as exciting as we do, and we invite you to [contribute](https://github.com/ariga/atlas)
+We hope that you find Atlas CLI as exciting as we do, and we invite you to [contribute](https://github.com/anthony-bible/atlas)
 your ideas and code. 

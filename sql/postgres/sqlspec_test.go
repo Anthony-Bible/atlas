@@ -9,9 +9,9 @@ import (
 	"strconv"
 	"testing"
 
-	"ariga.io/atlas/sql/internal/spectest"
-	"ariga.io/atlas/sql/internal/sqlx"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/internal/spectest"
+	"github.com/anthony-bible/atlas/sql/internal/sqlx"
+	"github.com/anthony-bible/atlas/sql/schema"
 	"github.com/stretchr/testify/require"
 )
 

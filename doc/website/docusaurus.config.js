@@ -45,7 +45,7 @@ module.exports = {
       },
       items: [
         {
-          href: 'https://github.com/ariga/atlas',
+          href: 'https://github.com/anthony-bible/atlas',
           className: 'header-github-link',
           position: 'right',
         },
@@ -100,13 +100,13 @@ module.exports = {
             {"label": "CLI Reference", "to": "cli-reference"},
             {"label": "Blog", "to": "blog"},
             {"label": "Guides", "to": "guides"},
-            {"label": "GoDoc", "to": "https://pkg.go.dev/ariga.io/atlas"},
+            {"label": "GoDoc", "to": "https://pkg.go.dev/github.com/anthony-bible/atlas"},
           ]
         },
         {
           "title": "Community",
           "items": [
-            {"label": "GitHub", "to": "https://github.com/ariga/atlas"},
+            {"label": "GitHub", "to": "https://github.com/anthony-bible/atlas"},
             {"label": "Discord", "to": "https://discord.gg/zZ6sWVg6NT"},
             {"label": "Twitter", "to": "https://twitter.com/ariga_io"},
             {"label": "Newsletter", "to": "https://atlasnewsletter.substack.com/"},

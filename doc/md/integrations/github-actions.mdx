@@ -23,9 +23,9 @@ database schema management tasks.
 | Action                                                | Use Case                                            |
 |-------------------------------------------------------|-----------------------------------------------------|
 | [ariga/setup-atlas](https://github.com/ariga/setup-atlas) | Install Atlas from a GitHub Actions workflow    |
-| [ariga/atlas-action/migrate/lint](https://github.com/ariga/atlas-action/tree/master/migrate/lint/action.yml)        | CI for schema changes                               |
-| [ariga/atlas-action/migrate/push](https://github.com/ariga/atlas-action/tree/master/migrate/push/action.yml)   | Push your migration directory to Atlas Cloud (atlasgo.cloud) |
-| [ariga/atlas-action/migrate/apply](https://github.com/ariga/atlas-action/tree/master/migrate/apply/action.yml) | Deploy versioned migrations from GitHub Actions    |
+| [ariga/atlas-action/migrate/lint](https://github.com/anthony-bible/atlas-action/tree/master/migrate/lint/action.yml)        | CI for schema changes                               |
+| [ariga/atlas-action/migrate/push](https://github.com/anthony-bible/atlas-action/tree/master/migrate/push/action.yml)   | Push your migration directory to Atlas Cloud (atlasgo.cloud) |
+| [ariga/atlas-action/migrate/apply](https://github.com/anthony-bible/atlas-action/tree/master/migrate/apply/action.yml) | Deploy versioned migrations from GitHub Actions    |
 
 ## `ariga/setup-atlas`
 
@@ -325,7 +325,7 @@ Learn more about [Atlas configuration files](https://atlasgo.io/atlas-schema/pro
 ## `ariga/atlas-action/migrate/lint` (CI)
 
 Teams using GitHub that wish to ensure all changes to their database schema are safe
-can use the [`atlas-action/migrate/lint`](https://github.com/ariga/atlas-action/blob/master/migrate/lint/action.yml) GitHub Action.
+can use the [`atlas-action/migrate/lint`](https://github.com/anthony-bible/atlas-action/blob/master/migrate/lint/action.yml) GitHub Action.
 
 This action is used for [linting migration directories](/versioned/lint)
 using the `atlas migrate lint` command. This command  validates and analyzes the contents
@@ -629,7 +629,7 @@ All inputs are optional as they may be specified in the Atlas configuration file
 
 ## `ariga/atlas-action/migrate/apply`
 
-You can use [ariga/atlas-action/migrate-apply](https://github.com/ariga/atlas-action/blob/master/migrate/apply/action.yml) to deploy migrations to your database directly from
+You can use [ariga/atlas-action/migrate-apply](https://github.com/anthony-bible/atlas-action/blob/master/migrate/apply/action.yml) to deploy migrations to your database directly from
 GitHub Actions.
 
 :::info

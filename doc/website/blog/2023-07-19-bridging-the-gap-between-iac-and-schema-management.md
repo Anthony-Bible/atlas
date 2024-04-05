@@ -10,7 +10,7 @@ When we started building Atlas a couple of years ago, we noticed that there was 
 considered state-of-the-art in managing database schemas and the recent
 strides from Infrastructure-as-Code (IaC) to managing cloud infrastructure.
 
-In this post, we review that gap and show how [Atlas](https://github.com/ariga/atlas) – along with its
+In this post, we review that gap and show how [Atlas](https://github.com/anthony-bible/atlas) – along with its
 [Terraform provider](https://github.com/ariga/terraform-provider-atlas) – can bridge the two domains.
 
 As an aside, I usually try to keep blog posts practical and to the point, but occasionally think it’s worth it to zoom

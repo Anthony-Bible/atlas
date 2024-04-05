@@ -8,8 +8,8 @@ package parseutil
 import (
 	"slices"
 
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
 )
 
 // Rename describes rename of a resource.

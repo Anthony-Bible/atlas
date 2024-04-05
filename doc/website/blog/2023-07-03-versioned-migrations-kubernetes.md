@@ -28,7 +28,7 @@ State vs. versioned based migrations is a common and unresolved debate in the da
 management world, and we built Atlas to [support both](/concepts/declarative-vs-versioned) from
 the get-go.  
 
-Today, we are happy to announce [v0.2.0](https://github.com/ariga/atlas-operator/releases/tag/v0.2.0) 
+Today, we are happy to announce [v0.2.0](https://github.com/anthony-bible/atlas-operator/releases/tag/v0.2.0) 
 of the Atlas Kubernetes Operator which adds support support for the 
 [versioned migration workflow](/integrations/kubernetes/operator#versioned-schema-migrations).
 
@@ -99,7 +99,7 @@ With the operator and the database running, let's set up the migration directory
 which we will use to manage our database schema.
 
 You can use the directory from an existing project, but for the sake of this demo
-we will use the [Atlas template repo](https://github.com/ariga/atlas-template) which
+we will use the [Atlas template repo](https://github.com/anthony-bible/atlas-template) which
 contains a simple migration directory.
 
 ```bash
@@ -270,7 +270,7 @@ And that's it! You've successfully deployed the Atlas Operator and applied migra
 
 In this blog post, we showed you how to use the Atlas Operator to manage your database schema
 in Kubernetes using a versioned migrations workflow. To learn more about the Atlas Operator,
-check out the [Atlas Operator GitHub repository](https://github.com/ariga/atlas-operator) as well
+check out the [Atlas Operator GitHub repository](https://github.com/anthony-bible/atlas-operator) as well
 as the [documentation](/integrations/kubernetes/operator) on the Atlas website.
 
 #### How can we make Atlas better?

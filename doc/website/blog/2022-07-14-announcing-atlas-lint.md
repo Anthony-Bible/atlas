@@ -5,14 +5,14 @@ tags: [atlas, lint, ci]
 image: https://blog.ariga.io/uploads/images/posts/v0.5.0/atlas-lint.png
 ---
 
-With the release of [v0.5.0](https://github.com/ariga/atlas/releases/tag/v0.5.0), we are
+With the release of [v0.5.0](https://github.com/anthony-bible/atlas/releases/tag/v0.5.0), we are
 happy to announce a very significant milestone for the project. While this version includes some
-cool features (such as multi-file schemas) and a [swath](https://github.com/ariga/atlas/compare/v0.4.2...v0.5.0)
+cool features (such as multi-file schemas) and a [swath](https://github.com/anthony-bible/atlas/compare/v0.4.2...v0.5.0)
 of incremental improvements and bugfixes, there is one feature that we're particularly
 excited about and want to share with you in this post.
 
 As most outages happen directly as a result of a change to a system, Atlas provides users with the means to verify the
-safety of planned changes before they happen. The [`sqlcheck`](https://pkg.go.dev/ariga.io/atlas@master/sql/sqlcheck)
+safety of planned changes before they happen. The [`sqlcheck`](https://pkg.go.dev/github.com/anthony-bible/atlas@master/sql/sqlcheck)
 package provides interfaces for analyzing the contents of SQL files to generate insights on the safety of many kinds of
 changes to database schemas. With this package, developers may define an `Analyzer` that can be used to diagnose the impact
 of SQL statements on the target database.

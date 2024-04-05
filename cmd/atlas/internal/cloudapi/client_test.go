@@ -14,7 +14,7 @@ import (
 	"runtime"
 	"testing"
 
-	"ariga.io/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/migrate"
 	"github.com/stretchr/testify/require"
 )
 

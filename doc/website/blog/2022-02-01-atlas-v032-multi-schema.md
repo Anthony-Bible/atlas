@@ -9,7 +9,7 @@ url: /announcing-atlas-v.0.3.2-multi-schema/
 image: https://blog.ariga.io/uploads/images/posts/v0.3.2/multi-schema.png
 ---
 
-Last week we released [v0.3.2](https://github.com/ariga/atlas/releases/tag/v0.3.2)
+Last week we released [v0.3.2](https://github.com/anthony-bible/atlas/releases/tag/v0.3.2)
 of the Atlas CLI.
 
 [Atlas](https://atlasgo.io) is an open source tool that helps developers manage their database schemas. Atlas plans database

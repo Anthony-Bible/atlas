@@ -7,7 +7,7 @@ package schemahcl_test
 import (
 	"testing"
 
-	"ariga.io/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/schemahcl"
 
 	"github.com/stretchr/testify/require"
 	"github.com/zclconf/go-cty/cty"

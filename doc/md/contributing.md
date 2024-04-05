@@ -8,7 +8,7 @@ slug: /contributing
 Atlas is a community project, we welcome contributions of all kinds and sizes!
 
 Here are some ways in which you can help:
-* File well-written and descriptive bug reports or feature requests in the [Issues page](https://github.com/ariga/atlas/issues).
+* File well-written and descriptive bug reports or feature requests in the [Issues page](https://github.com/anthony-bible/atlas/issues).
 * Tweet about your experience with Atlas on [Twitter](https://twitter.com), don't forget to mention
   [@ariga_io](https://twitter.com/ariga_io) and link to [atlasgo.io](https://atlasgo.io) if you do.
 * Write educational content on your personal blog or websites such as [dev.to](https://dev.to) or 
@@ -17,7 +17,7 @@ Here are some ways in which you can help:
   using our social-media channels for distributing it to readers.
 * Join our [Discord Server](https://discord.com/invite/QhsmBAWzrC) to answer questions of other users
   and find out other ways in which you can contribute by talking to the community there!
-* Contribute bug-fixes or new features to the [codebase](https://github.com/ariga/atlas).
+* Contribute bug-fixes or new features to the [codebase](https://github.com/anthony-bible/atlas).
 
 ### Contributing code to Atlas
 
@@ -77,14 +77,14 @@ go test ./...
 
 ### Contributing documentation 
 
-The Atlas documentation website is generated from the project's main [GitHub repo](https://github.com/ariga/atlas).
+The Atlas documentation website is generated from the project's main [GitHub repo](https://github.com/anthony-bible/atlas).
 
 Follow this short guide to contribute documentation improvements and additions:
 
 #### Setting Up
 
 1. [Locally fork and clone](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo) the
-  [repository](https://github.com/ariga/atlas).
+  [repository](https://github.com/anthony-bible/atlas).
 2. The documentation site uses [Docusaurus](https://docusaurus.io/). To run it you will need [Node.js installed](https://nodejs.org/en/).
 3. Install the dependencies:
   ```shell

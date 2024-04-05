@@ -48,7 +48,7 @@ been created by applying all previous migration scripts.
 The desired schema of your application can be provided to Atlas via an [External Schema Datasource](/atlas-schema/projects#data-source-external_schema),
 which is any program that can output a SQL schema definition to stdout.
 
-To use Atlas with SQLAlchemy, users can utilize the [SQLAlchemy Atlas Provider](https://github.com/ariga/atlas-provider-sqlalchemy),
+To use Atlas with SQLAlchemy, users can utilize the [SQLAlchemy Atlas Provider](https://github.com/anthony-bible/atlas-provider-sqlalchemy),
 which is a small program that can be used to load the schema of a SQLAlchemy project into Atlas.
 
 In this guide, we will show how Atlas can be used to automatically plan schema migrations for
@@ -62,7 +62,7 @@ If you don't have a SQLAlchemy project handy, check out the [SQLAlchemy quick st
 
 ## Using the Atlas SQLAlchemy Provider
 
-In this guide, we will use the [SQLAlchemy Atlas Provider](https://github.com/ariga/atlas-provider-sqlalchemy)
+In this guide, we will use the [SQLAlchemy Atlas Provider](https://github.com/anthony-bible/atlas-provider-sqlalchemy)
 to automatically plan schema migrations for a SQLAlchemy project.
 
 ### Installation

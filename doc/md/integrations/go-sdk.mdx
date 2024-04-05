@@ -12,7 +12,7 @@ For this reason, the public API which the project commits to support is the CLI.
 
 Having said that, Atlas is widely popular in the Go community and we want to make sure that
 Go developers can easily integrate Atlas into their projects. To support these kind of integrations,
-we provide a simple wrapper SDK called [`atlasexec`](https://github.com/ariga/atlas-go-sdk/tree/master/atlasexec) 
+we provide a simple wrapper SDK called [`atlasexec`](https://github.com/anthony-bible/atlas-go-sdk/tree/master/atlasexec) 
 around the Atlas CLI which can be used to drive the CLI from Go code. This SDK is used by official 
 integrations of Atlas, such as some [GitHub Actions](/integrations/github-actions), the [Kubernetes Operator](/integrations/kubernetes/operator),
 and the [Terraform Provider](/integrations/terraform-provider).
@@ -26,7 +26,7 @@ To get started, make sure you have the Atlas CLI installed:
 Next, add the `atlasexec` package to your Go project:
 
 ```bash
-go get ariga.io/atlas-go-sdk/atlasexec
+go get github.com/anthony-bible/atlas-go-sdk/atlasexec
 ```
 
 ## Example
@@ -76,7 +76,7 @@ import (
 	"log"
 	"os"
 
-	"ariga.io/atlas-go-sdk/atlasexec"
+	"github.com/anthony-bible/atlas-go-sdk/atlasexec"
 )
 
 func main() {
@@ -131,4 +131,4 @@ Applied 0 migrations
 
 In this tutorial, we have seen how to use the `atlasexec` package to drive the Atlas CLI from Go code.
 We focused on the `Apply` method, but the SDK also provides methods for `SchemaApply`, `Status`, `Inspect`, and more.
-For more information, please refer to the [package documentation](https://pkg.go.dev/ariga.io/atlas-go-sdk@master/atlasexec).
+For more information, please refer to the [package documentation](https://pkg.go.dev/github.com/anthony-bible/atlas-go-sdk@master/atlasexec).

@@ -222,7 +222,7 @@ Note: `hostFrom` and `userFrom` are also supported to load the host and user fro
 ## Declarative migrations
 
 The Atlas Operator relies on a Kubernetes custom resource called `AtlasSchema` to define the desired schema of your database.
-You can find the full definition for this resource on the [ariga/atlas-operator repo](https://github.com/ariga/atlas-operator/blob/master/charts/atlas-operator/templates/crds/crd.yaml).
+You can find the full definition for this resource on the [ariga/atlas-operator repo](https://github.com/anthony-bible/atlas-operator/blob/master/charts/atlas-operator/templates/crds/crd.yaml).
 This resource describes the desired state of a target database that is used in the operator's reconciliation loop.
 
 Let's review an example of such as a resource. Create a file named `atlas-schema.yaml` with the following contents:

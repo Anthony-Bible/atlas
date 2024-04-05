@@ -16,11 +16,11 @@ import (
 	"strings"
 	"text/template"
 
-	"ariga.io/atlas/cmd/atlas/internal/cmdext"
-	"ariga.io/atlas/cmd/atlas/internal/cmdlog"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cmdext"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cmdlog"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
 
 	"github.com/1lann/promptui"
 	"github.com/hashicorp/hcl/v2/hclwrite"

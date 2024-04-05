@@ -16,8 +16,8 @@ import (
 	"strings"
 	"time"
 
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
 
 	"github.com/vektah/gqlparser/v2/gqlerror"
 )

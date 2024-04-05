@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/migrate/ent/revision"
-	"ariga.io/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/migrate/ent/revision"
+	"github.com/anthony-bible/atlas/sql/migrate"
 	"entgo.io/ent/dialect"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"

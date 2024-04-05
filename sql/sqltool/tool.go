@@ -20,7 +20,7 @@ import (
 	"time"
 	"unicode"
 
-	"ariga.io/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/migrate"
 )
 
 var (

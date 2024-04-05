@@ -10,7 +10,7 @@ import (
 	"context"
 	"fmt"
 
-	"ariga.io/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/schemahcl"
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclsyntax"

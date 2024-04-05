@@ -5,7 +5,7 @@
 package sqlspec
 
 import (
-	"ariga.io/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/schemahcl"
 
 	"github.com/zclconf/go-cty/cty"
 )

@@ -16,7 +16,7 @@ import (
 	"strings"
 	"unicode"
 
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/schema"
 )
 
 type (

@@ -33,7 +33,7 @@ of ensuring that changes to database schemas are safe?
 
 ### Announcing the Atlas GitHub Action
 
-Today, we're happy to announce the release of the official [Atlas GitHub Action](https://github.com/ariga/atlas-action)
+Today, we're happy to announce the release of the official [Atlas GitHub Action](https://github.com/anthony-bible/atlas-action)
 which can be used to apply [migration directory linting](2022-07-14-announcing-atlas-lint.md) for a bunch of popular
 database migration tools. [golang-migrate](https://github.com/golang-migrate/migrate),
 [goose](https://github.com/pressly/goose), [dbmate](https://github.com/amacneil/dbmate) and Atlas itself are already supported,

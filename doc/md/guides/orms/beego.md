@@ -34,7 +34,7 @@ been created by applying all previous migration scripts.
 The desired schema of your application can be provided to Atlas via an [External Schema Datasource](/atlas-schema/projects#data-source-external_schema)
 which is any program that can output a SQL schema definition to stdout.
 
-To use Atlas with Beego, users can utilize the [Beego Atlas Provider](https://github.com/ariga/atlas-provider-beego),
+To use Atlas with Beego, users can utilize the [Beego Atlas Provider](https://github.com/anthony-bible/atlas-provider-beego),
 a small Go program that can be used to load the schema of a Beego project into Atlas.
 
 In this guide, we will show how Atlas can be used to automatically plan schema migrations for
@@ -50,7 +50,7 @@ on your machine.
 
 ## Using the Beego Atlas Provider 
 
-In this guide, we will use the [Beego Atlas Provider](https://github.com/ariga/atlas-provider-beego)
+In this guide, we will use the [Beego Atlas Provider](https://github.com/anthony-bible/atlas-provider-beego)
 to automatically plan schema migrations for a Beego project.
 
 ### Installation
@@ -63,7 +63,7 @@ See [atlasgo.io](https://atlasgo.io/getting-started#installation) for more insta
 
 Install the provider by running:
 ```bash
-go get -u ariga.io/atlas-provider-beego
+go get -u github.com/anthony-bible/atlas-provider-beego
 ``` 
 
 ### Standalone vs Go Program mode
@@ -83,7 +83,7 @@ data "external_schema" "beego" {
     "go",
     "run",
     "-mod=mod",
-    "ariga.io/atlas-provider-beego",
+    "github.com/anthony-bible/atlas-provider-beego",
     "load",
     "--path", "./path/to/models",
     "--dialect", "mysql", // | postgres | sqlite
@@ -128,7 +128,7 @@ import (
 	"io"
     "os"
 	
-    "ariga.io/atlas-provider-beego/beegoschema"
+    "github.com/anthony-bible/atlas-provider-beego/beegoschema"
     "github.com/<yourorg>/<yourrepo>/path/to/models"
     "github.com/beego/beego/v2/client/orm"
 )

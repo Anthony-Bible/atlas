@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"testing"
 
-	"ariga.io/atlas/cmd/atlas/internal/sqlparse/pgparse"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/postgres"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/sqlparse/pgparse"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/postgres"
+	"github.com/anthony-bible/atlas/sql/schema"
 
 	"github.com/stretchr/testify/require"
 )

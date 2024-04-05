@@ -9,10 +9,10 @@ import (
 	"slices"
 	"strconv"
 
-	"ariga.io/atlas/cmd/atlas/internal/sqlparse/parseutil"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/postgres"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/sqlparse/parseutil"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/postgres"
+	"github.com/anthony-bible/atlas/sql/schema"
 
 	"github.com/auxten/postgresql-parser/pkg/sql/parser"
 	"github.com/auxten/postgresql-parser/pkg/sql/sem/tree"

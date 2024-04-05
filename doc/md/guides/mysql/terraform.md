@@ -42,7 +42,7 @@ on AWS with RDS _and_ manage its schema in a single pipeline.
 
 ### Source code
 
-The full source code for this guide can be found on the [Atlas Examples](https://github.com/ariga/atlas-examples/tree/master/terraform/rds-mysql-example)
+The full source code for this guide can be found on the [Atlas Examples](https://github.com/anthony-bible/atlas-examples/tree/master/terraform/rds-mysql-example)
 repository on GitHub.
 
 ### Dev database

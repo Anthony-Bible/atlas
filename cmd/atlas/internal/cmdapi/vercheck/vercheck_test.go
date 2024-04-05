@@ -17,8 +17,8 @@ import (
 	"testing"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/cloudapi"
-	"ariga.io/atlas/cmd/atlas/internal/cmdstate"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cloudapi"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cmdstate"
 
 	"github.com/stretchr/testify/require"
 )
@@ -26,7 +26,7 @@ import (
 func TestVerCheck(t *testing.T) {
 	var path, ua string
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		output := `{"latest":{"Version":"v0.7.2","Summary":"","Link":"https://github.com/ariga/atlas/releases/tag/v0.7.2"},"advisory":null}`
+		output := `{"latest":{"Version":"v0.7.2","Summary":"","Link":"https://github.com/anthony-bible/atlas/releases/tag/v0.7.2"},"advisory":null}`
 		path = r.URL.Path
 		ua = r.Header.Get("User-Agent")
 		_, _ = w.Write([]byte(output))
@@ -47,7 +47,7 @@ func TestVerCheck(t *testing.T) {
 		Latest: &Latest{
 			Version: "v0.7.2",
 			Summary: "",
-			Link:    "https://github.com/ariga/atlas/releases/tag/v0.7.2",
+			Link:    "https://github.com/anthony-bible/atlas/releases/tag/v0.7.2",
 		},
 	}, check)
 

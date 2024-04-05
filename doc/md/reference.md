@@ -21,7 +21,7 @@ The binaries and Docker images distributed in official releases are released in 
   [Ariga](https://ariga.io), including access to the Atlas Cloud service and commercial driver support.
   Atlas is distributed under the [Atlas EULA](https://ariga.io/legal/atlas/eula).
 * Atlas Community - A binary built from the OSS repository only. Atlas Community is distributed under
-  the [Apache 2 License](https://github.com/ariga/atlas/blob/master/LICENSE).
+  the [Apache 2 License](https://github.com/anthony-bible/atlas/blob/master/LICENSE).
 
 For instructions on how to install Atlas Community, see this [guide](/community-edition).
 

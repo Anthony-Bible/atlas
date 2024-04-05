@@ -51,7 +51,7 @@ For instructions on using a database with an existing schema, [see below](#worki
 ### Configure Terraform
 
 Use the following configuration to apply the HCL file `schema.hcl` onto a target MySQL
-database (but you can specify any of the [supported databases](https://github.com/ariga/atlas#supported-databases)):
+database (but you can specify any of the [supported databases](https://github.com/anthony-bible/atlas#supported-databases)):
 
 ```hcl title="main.tf"
 provider "atlas" {}
@@ -135,7 +135,7 @@ h1:w2ODzVxhTKdBVBdzqntHw7rHV8lKQF98TmNevOEZfIo=
 ### Configure Terraform
 
 Use the following configuration to apply the migration directory onto a target MySQL
-database (but you can specify any of the [supported databases](https://github.com/ariga/atlas#supported-databases)):
+database (but you can specify any of the [supported databases](https://github.com/anthony-bible/atlas#supported-databases)):
 
 ```hcl title="main.tf"
 provider "atlas" {}

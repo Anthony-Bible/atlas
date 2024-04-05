@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/cmdext"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cmdext"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
@@ -48,11 +48,11 @@ var (
 	}
 
 	// flavor holds Atlas flavor. Custom flavors (like the community build) should set this by build flag
-	// "-X 'ariga.io/atlas/cmd/atlas/internal/cmdapi.flavor=community'"
+	// "-X 'github.com/anthony-bible/atlas/cmd/atlas/internal/cmdapi.flavor=community'"
 	flavor string
 
 	// version holds Atlas version. When built with cloud packages should be set by build flag, e.g.
-	// "-X 'ariga.io/atlas/cmd/atlas/internal/cmdapi.version=v0.1.2'"
+	// "-X 'github.com/anthony-bible/atlas/cmd/atlas/internal/cmdapi.version=v0.1.2'"
 	version string
 
 	// schemaCmd represents the subcommand 'atlas version'.
@@ -76,9 +76,9 @@ var (
 	}
 
 	// license holds Atlas license. When built with cloud packages should be set by build flag
-	// "-X 'ariga.io/atlas/cmd/atlas/internal/cmdapi.license=${license}'"
+	// "-X 'github.com/anthony-bible/atlas/cmd/atlas/internal/cmdapi.license=${license}'"
 	license = `LICENSE
-Atlas is licensed under Apache 2.0 as found in https://github.com/ariga/atlas/blob/master/LICENSE.`
+Atlas is licensed under Apache 2.0 as found in https://github.com/anthony-bible/atlas/blob/master/LICENSE.`
 
 	// licenseCmd represents the subcommand 'atlas license'.
 	licenseCmd = &cobra.Command{
@@ -180,13 +180,13 @@ func inputValuesFromEnv(cmd *cobra.Command, env *Env) error {
 
 // parseV returns a user facing version and release notes url
 func parseV(version string) (string, string) {
-	u := "https://github.com/ariga/atlas/releases/latest"
+	u := "https://github.com/anthony-bible/atlas/releases/latest"
 	if ok := semver.IsValid(version); !ok {
 		return "- development", u
 	}
 	s := strings.Split(version, "-")
 	if len(s) != 0 && s[len(s)-1] != "canary" {
-		u = fmt.Sprintf("https://github.com/ariga/atlas/releases/tag/%s", version)
+		u = fmt.Sprintf("https://github.com/anthony-bible/atlas/releases/tag/%s", version)
 	}
 	return version, u
 }

@@ -13,11 +13,11 @@ import (
 	"strings"
 	"sync"
 
-	"ariga.io/atlas/cmd/atlas/internal/cloudapi"
-	"ariga.io/atlas/cmd/atlas/internal/cmdext"
-	cmdmigrate "ariga.io/atlas/cmd/atlas/internal/migrate"
-	"ariga.io/atlas/schemahcl"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cloudapi"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cmdext"
+	cmdmigrate "github.com/anthony-bible/atlas/cmd/atlas/internal/migrate"
+	"github.com/anthony-bible/atlas/schemahcl"
+	"github.com/anthony-bible/atlas/sql/schema"
 
 	"github.com/hashicorp/hcl/v2"
 	"github.com/hashicorp/hcl/v2/hclparse"

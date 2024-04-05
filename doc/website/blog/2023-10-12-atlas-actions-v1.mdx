@@ -12,8 +12,8 @@ Actions experience for Atlas.  It was a modest start, which included the ability
 of schema migrations during the CI process.
 
 Over the past year, we have slowly added more features to the GitHub Actions experience, including the ability
-to [sync migration directories to Atlas Cloud](https://github.com/ariga/atlas-sync-action),
-[deploy migrations](https://github.com/ariga/atlas-deploy-action), and even [install Atlas](https://github.com/ariga/setup-atlas).
+to [sync migration directories to Atlas Cloud](https://github.com/anthony-bible/atlas-sync-action),
+[deploy migrations](https://github.com/anthony-bible/atlas-deploy-action), and even [install Atlas](https://github.com/ariga/setup-atlas).
 As often happens with quickly evolving systems, we felt that the API became complex, carrying over use cases
 and experiences that have become obsolete or superseded by better ones since the initial release.
 
@@ -25,7 +25,7 @@ clear, consistent and composable APIs that empower our users to achieve amazing 
 With that in mind, our team has been working hard in the past few weeks to revamp the GitHub Actions experience for Atlas.
 Here's a quick summary of the changes:
 
-1. We've moved all actions into a single repo - [ariga/atlas-action](https://github.com/ariga/atlas-action). (With
+1. We've moved all actions into a single repo - [ariga/atlas-action](https://github.com/anthony-bible/atlas-action). (With
    the exception of [ariga/setup-atlas](https://github.com/ariga/setup-atlas).)
 2. The API has been reviewed and updated to make sure it is consistent among the different actions and with the rest
    of the Atlas ecosystem.
@@ -40,9 +40,9 @@ As part of this change we are deprecating the previous generation of GitHub Acti
 to the new ones as soon as possible.  The old actions will continue to work for the time being, but we will not be
 receiving any updates. These actions are:
 
-* [ariga/atlas-sync-action](https://github.com/ariga/atlas-sync-action) is superseded by `ariga/atlas-action/migrate/push`.
-* [ariga/atlas-deploy-action](https://github.com/ariga/atlas-deploy-action) is superseded by `ariga/atlas-action/migrate/apply`.
-* [ariga/atlas-action](https://github.com/ariga/atlas-action) - the old, TypeScript based action, is superseded by the
+* [ariga/atlas-sync-action](https://github.com/anthony-bible/atlas-sync-action) is superseded by `ariga/atlas-action/migrate/push`.
+* [ariga/atlas-deploy-action](https://github.com/anthony-bible/atlas-deploy-action) is superseded by `ariga/atlas-action/migrate/apply`.
+* [ariga/atlas-action](https://github.com/anthony-bible/atlas-action) - the old, TypeScript based action, is superseded by the
   `ariga/atlas-action/migrate/lint` action.
 
 ### Introducing to the New Actions
@@ -57,9 +57,9 @@ The actions are:
 | Action                                                | Use Case                                            |
 |-------------------------------------------------------|-----------------------------------------------------|
 | [ariga/setup-atlas](https://github.com/ariga/setup-atlas) | Install Atlas from a GitHub Actions workflow    |
-| [ariga/atlas-action/migrate/lint](https://github.com/ariga/atlas-action/tree/master/migrate/lint/action.yml)        | CI for schema changes                               |
-| [ariga/atlas-action/migrate/push](https://github.com/ariga/atlas-action/tree/master/migrate/push/action.yml)   | Push your migration directory to Atlas Cloud (atlasgo.cloud) |
-| [ariga/atlas-action/migrate/apply](https://github.com/ariga/atlas-action/tree/master/migrate/apply/action.yml) | Deploy versioned migrations from GitHub Actions    |
+| [ariga/atlas-action/migrate/lint](https://github.com/anthony-bible/atlas-action/tree/master/migrate/lint/action.yml)        | CI for schema changes                               |
+| [ariga/atlas-action/migrate/push](https://github.com/anthony-bible/atlas-action/tree/master/migrate/push/action.yml)   | Push your migration directory to Atlas Cloud (atlasgo.cloud) |
+| [ariga/atlas-action/migrate/apply](https://github.com/anthony-bible/atlas-action/tree/master/migrate/apply/action.yml) | Deploy versioned migrations from GitHub Actions    |
 
 ### Example Workflows
 

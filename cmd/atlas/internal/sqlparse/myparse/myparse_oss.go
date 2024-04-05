@@ -9,8 +9,8 @@ package myparse
 import (
 	"errors"
 
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
 )
 
 // Parser for fixing linting changes.

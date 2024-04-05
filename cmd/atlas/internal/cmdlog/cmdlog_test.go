@@ -12,11 +12,11 @@ import (
 	"text/template"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/cmdlog"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/schema"
-	"ariga.io/atlas/sql/sqlclient"
-	_ "ariga.io/atlas/sql/sqlite"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/cmdlog"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
+	_ "github.com/anthony-bible/atlas/sql/sqlite"
 
 	"github.com/fatih/color"
 	_ "github.com/mattn/go-sqlite3"

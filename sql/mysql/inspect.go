@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"strings"
 
-	"ariga.io/atlas/sql/internal/sqlx"
-	"ariga.io/atlas/sql/schema"
+	"github.com/anthony-bible/atlas/sql/internal/sqlx"
+	"github.com/anthony-bible/atlas/sql/schema"
 )
 
 // A diff provides a MySQL implementation for schema.Inspector.

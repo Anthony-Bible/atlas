@@ -32,7 +32,7 @@ been created by applying all previous migration scripts.
 The desired schema of your application can be provided to Atlas via an [External Schema Datasource](/atlas-schema/projects#data-source-external_schema)
 which is any program that can output a SQL schema definition to stdout.
 
-To use Atlas with GORM, users can utilize the [GORM Atlas Provider](https://github.com/ariga/atlas-provider-gorm),
+To use Atlas with GORM, users can utilize the [GORM Atlas Provider](https://github.com/anthony-bible/atlas-provider-gorm),
 a small Go program that can be used to load the schema of a GORM project into Atlas.
 
 In this guide, we will show how Atlas can be used to automatically plan schema migrations for
@@ -51,7 +51,7 @@ git clone git@github.com:go-admin-team/go-admin.git
 
 ## Using the Atlas GORM Provider 
 
-In this guide, we will use the [GORM Atlas Provider](https://github.com/ariga/atlas-provider-gorm)
+In this guide, we will use the [GORM Atlas Provider](https://github.com/anthony-bible/atlas-provider-gorm)
 to automatically plan schema migrations for a GORM project.
 
 ### Installation
@@ -64,7 +64,7 @@ See [atlasgo.io](https://atlasgo.io/getting-started#installation) for more insta
 
 Install the provider by running:
 ```bash
-go get -u ariga.io/atlas-provider-gorm
+go get -u github.com/anthony-bible/atlas-provider-gorm
 ``` 
 
 ### Standalone vs Go Program mode
@@ -88,7 +88,7 @@ data "external_schema" "gorm" {
     "go",
     "run",
     "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./path/to/models",
     "--dialect", "mysql", // | postgres | sqlite | sqlserver
@@ -119,7 +119,7 @@ for tracking dependencies of tools and add a file named `tools.go` with the foll
 //go:build tools
 package main
 
-import _ "ariga.io/atlas-provider-gorm/gormschema"
+import _ "github.com/anthony-bible/atlas-provider-gorm/gormschema"
 ```
 Alternatively, you can simply add a blank import to the `models.go` file we created
 above.
@@ -145,7 +145,7 @@ import (
     "io"
     "os"
 
-    "ariga.io/atlas-provider-gorm/gormschema"
+    "github.com/anthony-bible/atlas-provider-gorm/gormschema"
 	
     "github.com/<yourorg>/<yourrepo>/path/to/models"
 )

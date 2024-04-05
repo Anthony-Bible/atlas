@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"ariga.io/atlas/cmd/atlas/internal/migrate/ent/revision"
-	"ariga.io/atlas/sql/migrate"
-	"ariga.io/atlas/sql/sqlclient"
-	"ariga.io/atlas/sql/sqltool"
+	"github.com/anthony-bible/atlas/cmd/atlas/internal/migrate/ent/revision"
+	"github.com/anthony-bible/atlas/sql/migrate"
+	"github.com/anthony-bible/atlas/sql/sqlclient"
+	"github.com/anthony-bible/atlas/sql/sqltool"
 
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/stretchr/testify/require"

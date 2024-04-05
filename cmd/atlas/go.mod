@@ -1,13 +1,13 @@
-module ariga.io/atlas/cmd/atlas
+module github.com/anthony-bible/atlas/cmd/atlas
 
 go 1.22
 
-replace ariga.io/atlas => ../..
+replace github.com/anthony-bible/atlas => ../..
 
 require (
-	ariga.io/atlas v0.19.1-0.20240203083654-5948b60a8e43
 	entgo.io/ent v0.13.0
 	github.com/1lann/promptui v0.8.1-0.20220708222609-81fad96dd5e1
+	github.com/anthony-bible/atlas v0.19.1-0.20240203083654-5948b60a8e43
 	github.com/antlr4-go/antlr/v4 v4.13.0
 	github.com/auxten/postgresql-parser v1.0.1
 	github.com/aws/aws-sdk-go-v2/config v1.26.1
@@ -34,6 +34,7 @@ require (
 )
 
 require (
+	ariga.io/atlas v0.19.1-0.20240203083654-5948b60a8e43 // indirect
 	cloud.google.com/go/compute v1.23.3 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/iam v1.1.5 // indirect

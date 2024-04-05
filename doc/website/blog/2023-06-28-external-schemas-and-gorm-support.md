@@ -67,7 +67,7 @@ you would use a program that understands your ORM or tool of choice to generate 
 support this out-of-the-box, such as Laravel's Eloquent's `schema:dump` command, while others require
 some simple integrations work to extract the schema from.  
 
-In the next section we will present the [GORM Atlas Provider](https://github.com/ariga/atlas-provider-gorm) and
+In the next section we will present the [GORM Atlas Provider](https://github.com/anthony-bible/atlas-provider-gorm) and
 how it can be used to seamlessly integrate a GORM based project with Atlas.
 
 ## Demo Time
@@ -98,7 +98,7 @@ See [atlasgo.io](https://atlasgo.io/getting-started#installation) for more insta
 
 Install the provider by running:
 ```bash
-go get -u ariga.io/atlas-provider-gorm
+go get -u github.com/anthony-bible/atlas-provider-gorm
 ``` 
 
 ### Standalone vs Go Program mode
@@ -122,7 +122,7 @@ data "external_schema" "gorm" {
     "go",
     "run",
     "-mod=mod",
-    "ariga.io/atlas-provider-gorm",
+    "github.com/anthony-bible/atlas-provider-gorm",
     "load",
     "--path", "./path/to/models",
     "--dialect", "mysql", // | postgres | sqlite

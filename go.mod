@@ -1,4 +1,4 @@
-module ariga.io/atlas
+module github.com/anthony-bible/atlas
 
 go 1.22
 
